@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="OeH">
+    <property name="cursor">arrow</property>
+    <property name="height">300</property>
+    <property name="padding">0</property>
+    <property name="takefocus">true</property>
+    <property name="width">400</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">False</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="lb_title">
+        <property name="anchor">center</property>
+        <property name="compound">top</property>
+        <property name="justify">left</property>
+        <property name="text" translatable="yes">Operaciones Puntuales e Histograma</property>
+        <property name="wraplength">0</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="ipady">20</property>
+          <property name="propagate">False</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_ruido">
+        <property name="anchor">w</property>
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="padding">3</property>
+        <property name="text" translatable="yes">Umbralización global</property>
+        <property name="width">34</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btn_selectImage">
+        <property name="command">GetImage</property>
+        <property name="compound">top</property>
+        <property name="cursor">arrow</property>
+        <property name="default">normal</property>
+        <property name="state">normal</property>
+        <property name="text" translatable="yes">Seleccionar Imagen</property>
+        <property name="underline">0</property>
+        <property name="width">20</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_deteccion">
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="padding">3</property>
+        <property name="text" translatable="yes">Umbrazilación local</property>
+        <property name="width">34</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="pady">5</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btn_selectImageNormal">
+        <property name="command">GetImageNormal</property>
+        <property name="text" translatable="yes">Select Image Normal</property>
+        <property name="width">24</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btn_selectImageAltered">
+        <property name="command">GetImageAltered</property>
+        <property name="text" translatable="yes">Select Image Altered</property>
+        <property name="width">24</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="ipady">0</property>
+          <property name="pady">5</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="Label_8">
+        <property name="anchor">center</property>
+        <property name="background">#BDBDBD</property>
+        <property name="padding">5</property>
+        <property name="text" translatable="yes">Histograma</property>
+        <property name="width">24</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="Button_6">
+        <property name="command">Start_Thresholding_Global</property>
+        <property name="text" translatable="yes">Start</property>
+        <property name="width">20</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="Button_7">
+        <property name="command">StartImageRegistration</property>
+        <property name="text" translatable="yes">Start</property>
+        <property name="width">20</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btn_getHistogram_global">
+        <property name="command">GetHistogram_Global</property>
+        <property name="cursor">starting</property>
+        <property name="text" translatable="yes">Obtener el histograma</property>
+        <property name="width">20</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
